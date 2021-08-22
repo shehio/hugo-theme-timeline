@@ -1,23 +1,19 @@
 # hugo-theme-timeline
-Simple hugo theme to display your timeline.
-
-![Screenshot](https://raw.githubusercontent.com/s4n7h0/hugo-theme-timeline/main/images/screenshot.png "Screenshot")
-
-### Example - https://devilslab.in/timeline/
+This is my fork of [s4n70h0's](https://github.com/s4n7h0/hugo-theme-timeline) minimal hugo timeline design.
 
 ### Features 
 
-* dark/light mode, default is black. 
-* customizable timeline options.
-* automatic timeline sorting based on the date (latest one shows first).
-* minimal design. 
+* dark/light mode, default is black
+* customizable timeline options
+* automatic timeline sorting based on the date (latest one shows first)
+* minimal design
 
 ### Usage 
 
 Clone the repository into the theme directory of your hugo project 
 
 ```
-git clone https://github.com/s4n7h0/hugo-theme-timeline.git themes/timeline
+git clone https://github.com/shehio/hugo-theme-timeline themes/timeline
 ```
 
 ### Credits and License 
