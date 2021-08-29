@@ -150,32 +150,10 @@ blockquote {
 
 		.timeline-item {
 
-			&:nth-child(even) {
-
-				.timeline-content {
-					float: none;
-
-				}
+			.timeline-content {
+				float: right;
 			}
 
-			&:nth-child(odd) {
-
-				.timeline-content {
-					
-					&::after {
-						content: '';
-						position: absolute;
-						border-style: solid;
-						width: 0;
-						height: 0;
-						top: 30px;
-						left: -15px;
-						border-width: 10px 15px 10px 0;
-						border-color: transparent #f5f5f5 transparent transparent;
-					}
-				}
-
-			}
 		}
 	}
 	
