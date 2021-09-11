@@ -142,13 +142,6 @@ section {
 	border-radius: 2px;
 }
 
-video {
-	margin-top: 20px;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
 @media screen and (max-width: 768px) {
 
 	// .timeline {
@@ -215,45 +208,45 @@ body {
 	}
   }
   
-  h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
 	display: flex;
 	align-items: center;
 	line-height: 1.3;
-  }
+}
   
-  h1 {
+h1 {
 	font-size: 2.625rem;
-  }
+}
   
-  h2 {
+h2 {
 	font-size: 1.625rem;
-  }
+}
   
-  h3 {
+h3 {
 	font-size: 1.375rem;
-  }
+}
   
-  h4 {
+h4 {
 	font-size: 1.125rem;
-  }
+}
   
-  @media #{$media-size-phone} {
+@media #{$media-size-phone} {
 	h1 {
-	  font-size: 2rem;
+		font-size: 2rem;
 	}
-  
+	
 	h2 {
-	  font-size: 1.4rem;
+		font-size: 1.4rem;
 	}
-  
+	
 	h3 {
-	  font-size: 1.15rem;
+		font-size: 1.15rem;
 	}
-  
+	
 	h4 {
-	  font-size: 1.125rem;
+		font-size: 1.125rem;
 	}
-  }
+}
 
 button,
 .button,
@@ -335,89 +328,7 @@ a {
 	color: inherit;
 }
   
-img {
-	display: block;
-	max-width: 100%;
 
-	&.left {
-		margin-right: auto;
-	}
-
-	&.center {
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	&.right {
-		margin-left: auto;
-	}
-
-	&.circle {
-		border-radius: 50%;
-		max-width: 25%;
-		margin: auto;
-	}
-}
-  
-  figure {
-	display: table;
-	max-width: 100%;
-	margin: 25px 0;
-  
-	&.left {
-	  margin-right: auto;
-	}
-  
-	&.left-floated {
-	  margin-right: auto;
-	  float: left;
-	  img {
-		margin: 20px 20px 20px 0;
-	  }
-	}
-  
-	&.center {
-	  margin-left: auto;
-	  margin-right: auto;
-	}
-  
-	&.right {
-	  margin-left: auto;
-	}
-  
-	&.right-floated {
-	  margin-left: auto;
-	  float: right;
-	  img {
-		margin: 20px 0 20px 20px;
-	  }
-	}
-  
-	&.rounded {
-	  img {
-		border-radius: 50%;
-	  }
-	}
-  
-	figcaption {
-	  font-size: 14px;
-	  margin-top: 5px;
-	  opacity: .8;
-  
-	  &.left {
-		text-align: left;
-	  }
-  
-	  &.center {
-		text-align: center;
-	  }
-  
-	  &.right {
-		text-align: right;
-	  }
-	}
-  }
-  
 code {
 	font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
 	font-display: auto;
@@ -536,17 +447,17 @@ pre {
 	display: none;
   }
   
-  .hide-on-phone {
+.hide-on-phone {
 	@media #{$media-size-phone} {
 	  display: none;
 	}
-  }
+}
   
-  .hide-on-tablet {
+.hide-on-tablet {
 	@media #{$media-size-tablet} {
 	  display: none;
 	}
-  }
+}
   
   .footer {
 	padding: 40px 20px;
