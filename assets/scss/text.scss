@@ -1,0 +1,82 @@
+h2, h3, h4, h5, h6 {
+	display: flex;
+	align-items: center;
+	line-height: 1.3;
+}
+  
+h1 {
+	font-size: 2.625rem;
+}
+  
+h2 {
+	font-size: 1.625rem;
+}
+  
+h3 {
+	font-size: 1.375rem;
+}
+  
+h4 {
+	font-size: 1.125rem;
+}
+
+a {
+	color: inherit;
+}
+  
+code {
+	font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+	font-display: auto;
+	font-feature-settings: normal;
+	background: $light-background-secondary;
+	padding: 1px 6px;
+	margin: 0 2px;
+	border-radius: 5px;
+	font-size: .95rem;
+  
+	.dark-theme & {
+	  background: $dark-background-secondary;
+	}
+}
+
+blockquote {
+	border-left: 2px solid;
+	margin: 40px;
+	padding: 10px 20px;
+  
+	@media #{$media-size-phone} {
+	  margin: 10px;
+	  padding: 10px;
+	}
+  
+	&:before {
+	  content: '”';
+	  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif; //Georgia, serif;
+	  font-display: auto;
+	  font-size: 3.875rem;
+	  position: absolute;
+	  left: -40px;
+	  top: -20px;
+	}
+  
+	p:first-of-type {
+	  margin-top: 0;
+	}
+  
+	p:last-of-type {
+	  margin-bottom: 0;
+	}
+  }
+
+  ul, ol {
+	margin-left: 40px;
+	padding: 0;
+  
+	@media #{$media-size-phone} {
+	  margin-left: 20px;
+	}
+  }
+  
+  ol ol {
+	list-style-type: lower-alpha;
+  }
