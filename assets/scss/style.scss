@@ -230,23 +230,7 @@ h4 {
 	font-size: 1.125rem;
 }
   
-@media #{$media-size-phone} {
-	h1 {
-		font-size: 2rem;
-	}
-	
-	h2 {
-		font-size: 1.4rem;
-	}
-	
-	h3 {
-		font-size: 1.15rem;
-	}
-	
-	h4 {
-		font-size: 1.125rem;
-	}
-}
+
 
 button,
 .button,
@@ -446,66 +430,3 @@ pre {
   .hidden {
 	display: none;
   }
-  
-.hide-on-phone {
-	@media #{$media-size-phone} {
-	  display: none;
-	}
-}
-  
-.hide-on-tablet {
-	@media #{$media-size-tablet} {
-	  display: none;
-	}
-}
-  
-  .footer {
-	padding: 40px 20px;
-	flex-grow: 0;
-	color: $light-color-secondary;
-  
-	&__inner {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  margin: 0 auto;
-	  width: 760px;
-	  max-width: 100%;
-  
-	  @media #{$media-size-tablet} {
-		flex-direction: column;
-	  }
-	}
-  
-	&__content {
-	  display: flex;
-	  flex-direction: row;
-	  align-items: center;
-	  font-size: 1rem;
-	  color: $light-color-secondary;
-  
-	  @media #{$media-size-tablet} {
-		flex-direction: column;
-		margin-top: 10px;
-	  }
-  
-	  & > *:not(:last-child)::after {
-		content: "•";
-		padding: 0 5px;
-  
-		@media #{$media-size-tablet} {
-			content: "";
-			padding: 0;
-		}
-	  }
-  
-	  & > *:last-child {
-		padding: 0 5px;
-  
-		@media #{$media-size-tablet} {
-			padding: 0;
-		}
-	  }
-	}
-  }
-  
