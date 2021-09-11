@@ -1,0 +1,100 @@
+html {
+	box-sizing: border-box;
+	line-height: 1.6;
+	letter-spacing: .05em;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+	font-display: auto;
+	font-size: 1rem;
+	line-height: 1.54;
+	background-color: $light-background;
+	color: $light-color;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: 100%;
+  
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+  
+	@media #{$media-size-phone} {
+	  font-size: 0.75rem;
+	}
+  
+	&.dark-theme {
+	  background-color: $dark-background;
+	  color: $dark-color;
+	}
+}
+
+section {
+    padding: 100px 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+button,
+.button,
+a.button {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 5px;
+  background: $light-background-secondary;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+
+  .dark-theme & {
+    background: $dark-background-secondary;
+    color: inherit;
+  }
+}
+
+hr {
+	width: 100%;
+	border: none;
+	background: $light-border-color;
+	height: 1px;
+  
+	.dark-theme & {
+	  background: $dark-border-color;
+	}
+}
+
+pre {
+	background: #212020;
+	padding: 10px 10px 10px 20px;
+	border-radius: 8px;
+	font-size: .95rem;
+	overflow: auto;
+  
+	@media #{$media-size-phone} {
+	  white-space: pre-wrap;
+	  word-wrap: break-word;
+	}
+  
+	code {
+	  background: none !important;
+	  color: #ccc;
+	  margin: 0;
+	  padding: 0;
+	  font-size: inherit;
+  
+	  .dark-theme & {
+		color: inherit;
+	  }
+	}
+}
