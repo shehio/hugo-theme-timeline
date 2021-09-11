@@ -273,47 +273,6 @@ a.button {
     background: $dark-background-secondary;
     color: inherit;
   }
-
-  /* variants */
-
-  &.outline {
-    background: transparent;
-    border-color: $light-background-secondary;
-    box-shadow: none;
-    padding: 8px 18px;
-
-    .dark-theme & {
-      border-color: $dark-background-secondary;
-      color: inherit;
-    }
-
-    :hover {
-      transform: none;
-      box-shadow: none;
-    }
-  }
-
-  &.primary {
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
-
-    &:hover {
-      box-shadow: 0 2px 6px rgba(50, 50, 93, .21), 0 1px 3px rgba(0, 0, 0, .08);
-    }
-  }
-
-  &.link {
-    background: none;
-    font-size: 1rem;
-  }
-
-  &.small {
-    font-size: .8rem;
-  }
-
-  &.wide {
-    min-width: 200px;
-    padding: 14px 24px;
-  }
 }
 
 .header {
