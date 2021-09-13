@@ -12,17 +12,17 @@
         {{ range .Pages.ByDate  }} 
 
         <div class="timeline-item">
-            <div class="timeline-img"></div>
+            <div class="timeline-icon"></div>
 
             <a href="{{.Permalink}}">
                 <div class="timeline-content js--fadeInLeft">
-                    <h2><span class="post-title">{{.Title}}</span></h2>
-                    <div class="date">{{ .Date.Format "Jan 2, 2006"}}</div>
-                    <p>
+                    <p class="timeline-title">{{.Title}}</p>
+                    <div class="date" >{{ .Date.Format "Jan 2, 2006"}}</div>
+                    <!-- <p>
                         {{.Params.Eventname}}<br>
                         {{.Params.Eventlocation}}
 
-                    </p> 
+                    </p>  -->
                 </div>
             </a>
         </div>  
