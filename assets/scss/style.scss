@@ -20,7 +20,7 @@ $timeline-item-background: #f5f5f5;
 		content: '';
 		background: $light-primary;
 		width: 5px;
-		height: 95%;
+		height: 100%;
 		position: absolute;
 		left: 50%;
 		transform: translateX(-50%);
@@ -135,6 +135,7 @@ $timeline-item-background: #f5f5f5;
 	right: 5px;
 
 	border-radius: 2px;
+	font-size: 0.75rem;
 }
 
 @media screen and (max-width: 768px) {
