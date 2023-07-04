@@ -18,6 +18,13 @@
                 <div class="timeline-content js--fadeInLeft">
                     <p class="timeline-title">{{.Title}}</p>
                     <div class="date" >{{ .Date.Format "Jan 2, 2006"}}</div>
+
+                    {{ if .Params.img }}
+                        <figure>
+                            <img src="{{.Params.img}}" />
+                        </figure>
+                    {{ end }}
+                    
                     <!-- <p>
                         {{.Params.Eventname}}<br>
                         {{.Params.Eventlocation}}
