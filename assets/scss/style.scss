@@ -98,8 +98,7 @@ $timeline-item-background: #f5f5f5;
 
 .timeline-item {
   .timeline-img-header {
-			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), $light-primary center center no-repeat;
-			background-size: cover;
+			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), $light-primary;
 		}
 }
 
