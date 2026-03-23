@@ -25,7 +25,7 @@ a {
 }
   
 code {
-	font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif;
+	font-family: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', 'Courier New', monospace;
 	font-display: auto;
 	font-feature-settings: normal;
 	background: $light-background-secondary;
@@ -50,7 +50,7 @@ blockquote {
 	}
   
 	&:before {
-	  content: '”';
+	  content: '"';
 	  font-family: 'Inter UI', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",  Helvetica, Arial, sans-serif; //Georgia, serif;
 	  font-display: auto;
 	  font-size: 3.875rem;
