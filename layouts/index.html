@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<main aria-role="main"> 
+<main role="main"> 
 
 
   <div class="content"> 
@@ -12,14 +12,13 @@
         <a class="button" href="{{.Site.BaseURL}}/about">About</a>
       </div>
 
-      <div class='video-container'>
-        <video src="{{.Site.Params.video}}" autoPlay loop muted playsinline />
+      <div classs='video-container'>
+        <video src="{{.Site.Params.video}}" autoPlay loop muted playsinline></video>
       </div>
 
     </div>
   </div> 
 
-</div>
 
 </main>
 
