@@ -16,6 +16,10 @@ $timeline-item-background: #f5f5f5;
 
 	position: relative;
 
+	.container {
+		text-align: left;
+	}
+
 	&::before {
 		content: '';
 		background: $light-primary;

@@ -1,6 +1,4 @@
 {{ define "main" }}
-{{ $paginator := .Paginate .Data.Pages }}
-
 
 <main class="posts">
     <h1 align="center">{{.Site.Params.TimelineTitle}}</h1>
@@ -8,8 +6,8 @@
     <div class="content">{{ .Content }}</div>
     {{ end }}
     <section class="timeline">
-      <div class="container" style="text-align: left!important">
-        {{ range .Pages.ByDate  }} 
+      <div class="container">
+        {{ range .Pages.ByDate  }}
 
         <div class="timeline-item">
             <div class="timeline-icon"></div>
@@ -21,19 +19,13 @@
 
                     {{ if .Params.img }}
                         <figure>
-                            <img src="{{.Params.img}}" />
+                            <img src="{{.Params.img}}" alt="{{.Title}}" />
                         </figure>
                     {{ end }}
-                    
-                    <!-- <p>
-                        {{.Params.Eventname}}<br>
-                        {{.Params.Eventlocation}}
-
-                    </p>  -->
                 </div>
             </a>
-        </div>  
-        {{ end }}   
+        </div>
+        {{ end }}
     </div>
 </section>
 
