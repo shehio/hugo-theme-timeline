@@ -5,11 +5,14 @@
     {{ if .Content }}
     <div class="content">{{ .Content }}</div>
     {{ end }}
+    <div class="timeline-sort">
+      <button id="timeline-sort-toggle" class="button" type="button" aria-pressed="false">Newest first</button>
+    </div>
     <section class="timeline">
       <div class="container">
         {{ range .Pages.ByDate  }}
 
-        <div class="timeline-item">
+        <div class="timeline-item" data-date="{{ .Date.Unix }}">
             <div class="timeline-icon"></div>
 
             <a href="{{.Permalink}}">
@@ -28,6 +31,36 @@
         {{ end }}
     </div>
 </section>
+
+<script>
+(function () {
+  var KEY = 'timeline-order';
+  var btn = document.getElementById('timeline-sort-toggle');
+  var container = document.querySelector('.timeline .container');
+  if (!btn || !container) return;
+  var desc = false;
+
+  function apply() {
+    var items = Array.prototype.slice.call(container.querySelectorAll('.timeline-item'));
+    items.sort(function (a, b) {
+      var da = +a.getAttribute('data-date'), db = +b.getAttribute('data-date');
+      return desc ? db - da : da - db;
+    });
+    items.forEach(function (el) { container.appendChild(el); });
+    btn.textContent = desc ? 'Oldest first' : 'Newest first';
+    btn.setAttribute('aria-pressed', String(desc));
+  }
+
+  btn.addEventListener('click', function () {
+    desc = !desc;
+    try { localStorage.setItem(KEY, desc ? 'desc' : 'asc'); } catch (e) {}
+    apply();
+  });
+
+  try { desc = localStorage.getItem(KEY) === 'desc'; } catch (e) {}
+  if (desc) apply();
+})();
+</script>
 
 
 
